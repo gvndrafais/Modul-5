@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesona Telaga Sarangan</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            padding: 24px 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #eaf0f2;
+            color: #172b35;
+        }
+        .website {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #fff;
+            border: 1px solid #c8d3d8;
+            box-shadow: 0 4px 16px rgba(0,0,0,.12);
+        }
+        header {
+            min-height: 70px;
+            padding: 14px 22px;
+            background: #254b5a;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        header h1 { margin: 0; font-size: 23px; letter-spacing: 1px; }
+        nav { display: flex; gap: 8px; }
+        nav a {
+            display: inline-block;
+            padding: 10px 18px;
+            color: #fff;
+            background: #142e3a;
+            border: 2px solid #8eb7bd;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        nav a:hover { background: #39788a; }
+        .hero {
+            min-height: 245px;
+            display: flex;
+            align-items: end;
+            padding: 30px;
+            color: #fff;
+            background:
+                linear-gradient(90deg, rgba(8,35,45,.72), rgba(8,35,45,.08)),
+                linear-gradient(180deg, rgba(0,0,0,.05), rgba(0,0,0,.35)),
+                url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjPTebzsyV6J37EGF7oYl6avOJw_aCNpl78DCB6M4TPA&s=10")
+                center 52% / cover no-repeat;
+        }
+        .hero h2 {
+            margin: 0;
+            font-size: clamp(27px, 5vw, 43px);
+            letter-spacing: 2px;
+            text-shadow: 0 2px 8px rgba(0,0,0,.35);
+        }
+        .hero p { margin: 8px 0 0; font-size: 14px; letter-spacing: 1px; }
+        .content { display: flex; min-height: 430px; }
+        aside {
+            width: 31%;
+            padding: 28px 24px;
+            background: #28566b;
+            color: #fff;
+        }
+        aside h2 { margin: 0 0 22px; font-size: 19px; letter-spacing: 1px; }
+        aside p { font-size: 13px; line-height: 1.8; text-align: justify; }
+        aside .location {
+            color: #d4e9ec;
+            font-size: 12px;
+            margin-top: -12px;
+        }
+        main { flex: 1; padding: 34px 30px; background: #fff; }
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 14px;
+            margin-bottom: 28px;
+        }
+        .highlights div {
+            min-height: 105px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px;
+            color: #fff;
+            background: #5c91a0;
+            border: 4px solid #28566b;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        main h2 { margin: 0 0 10px; font-size: 20px; color: #28566b; }
+        main p { margin: 0 0 14px; font-size: 14px; line-height: 1.8; text-align: justify; }
+        .note {
+            padding: 14px 16px;
+            background: #edf5f5;
+            border-left: 4px solid #5c91a0;
+            font-size: 13px;
+            line-height: 1.7;
+        }
+        footer {
+            padding: 13px;
+            color: #fff;
+            background: #142e3a;
+            border: 4px solid #28566b;
+            text-align: center;
+            font-size: 11px;
+        }
+        @media (max-width: 700px) {
+            body { padding: 10px; }
+            header { justify-content: center; text-align: center; }
+            nav { width: 100%; justify-content: center; flex-wrap: wrap; }
+            .hero { min-height: 180px; padding: 20px; }
+            .content { flex-direction: column; }
+            aside { width: 100%; }
+            main { padding: 24px 18px; }
+            .highlights { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <div class="website">
+        <header id="home">
+            <h1>PESONA TELAGA SARANGAN</h1>
+            <nav>
+                <a href="#home">HOME</a>
+                <a href="#profil">PROFIL</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
+        </header>
+
+        <section class="hero" aria-label="Pemandangan alam Telaga Sarangan">
+            <div>
+                <h2>TELAGA SARANGAN</h2>
+                <p>WISATA ALAM • MAGETAN, JAWA TIMUR</p>
+            </div>
+        </section>
+
+        <div class="content">
+            <aside id="profil">
+                <h2>TENTANG SARANGAN</h2>
+                <p class="location">Kecamatan Plaosan, Kabupaten Magetan</p>
+                <p>Telaga Sarangan merupakan destinasi wisata alam yang berada di kawasan lereng Gunung Lawu. Suasana sejuk, pemandangan pegunungan, dan air telaga menjadi daya tarik bagi wisatawan yang ingin menikmati keindahan alam.</p>
+                <p>Tempat ini cocok untuk bersantai bersama keluarga, menikmati kuliner, dan mengabadikan pemandangan alam.</p>
+            </aside>
+
+            <main>
+                <div class="highlights">
+                    <div>WISATA ALAM</div>
+                    <div>PERAHU</div>
+                    <div>KULINER</div>
+                    <div>PEGUNUNGAN</div>
+                </div>
+                <h2>Pesona Wisata Sarangan</h2>
+                <p>Telaga Sarangan dikenal dengan panorama telaga yang dikelilingi perbukitan hijau dan udara pegunungan yang sejuk. Pengunjung dapat menikmati pemandangan dari tepi telaga, berkeliling menggunakan perahu, atau mencoba berbagai kuliner khas yang tersedia di sekitar kawasan wisata.</p>
+                <p>Keindahan alam dan suasana yang tenang menjadikan Sarangan salah satu tujuan wisata favorit di Kabupaten Magetan, Jawa Timur.</p>
+                <div class="note"><strong>Jelajahi Sarangan:</strong> nikmati pemandangan telaga, udara segar, dan pengalaman wisata alam yang menyenangkan.</div>
+            </main>
+        </div>
+
+        <footer id="contact">© 2026 PESONA TELAGA SARANGAN | WISATA KABUPATEN MAGETAN</footer>
+    </div>
+</body>
+</html>
